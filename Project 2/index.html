@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rijan Shrestha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="CSS/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 627px)" href="CSS/phone_mini.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="imgs/logo2.png" id="logo-logo" alt="Rijanisbusy">
+            </div>
+            <ul>
+                <li class="item"><a href="#home" >Home</a></li>
+                <li class="item"><a href="#projects-container">Projects</a></li>
+                <li class="item"><a href="#skills">Skills</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#contact-container">Contact</a></li>
+            </ul>
+            <img src="imgs/moon.png" id="icon">
+        </nav>
+
+        <section id="home">
+            <h1 class="h-primary">I'm <span>Rijan</span> Shrestha</h1>
+            <p><span>THIS SITE IS UNDER CONSTRUCTION</span></p>
+            <p>Hello! I'm a Software Developer based in Nepal who loves bringing ideas to life through design and code.</p>
+            <p>If you have a project in mind, think you need my help or just fancy saying hey, then get in touch.</p>
+            <!-- <p>Email: <a href="mailto:rijanshrestha98450@gmail.com">rijanshrestha98450@gmail.com</a> </p> -->
+            <a href="https://drive.google.com/file/d/1MFKtc9kfnwsoXoQM_uAG2Y5WsRA2bEyJ/view?usp=sharing" target="_blank" class="btn">Download CV</a>
+
+            <div class="img-box">
+                <img src="imgs/pattern.png" class="back-img">
+                <img src="imgs/main.png" class="main-img">
+            </div>
+        </section>
+
+        <section id="projects-container">
+            <h1 class="h-primary">My <span>Projects</span></h1>
+            <p>Here are some of my self-built projects</p>
+            <div id="projects">
+                <div class="box">
+                    <img src="imgs/project2.jpg" alt="">
+                    <div class="project-info">
+                        <h2 class="h-secondary">Project 1</h2>
+                        <p>This project is pending.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, ducimus!</p>
+                        <a href="#" class="project-btn">Read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="imgs/project2.jpg" alt="">
+                    <div class="project-info">
+                        <h2 class="h-secondary">Project 2</h2>
+                        <p>This project is pending.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, ducimus! </p>
+                        <a href="#" class="project-btn">Read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="imgs/project2.jpg" alt="">
+                    <div class="project-info">
+                        <h2 class="h-secondary">Project 3</h2>
+                        <p>This project is pending.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, sequi?</p>
+                        <a href="#" class="project-btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1 class="h-primary">My <span>Skills</span></h1>
+            <div id="skills-box">
+                <div id="skills-set">
+                    <ul>
+                        <li class="skill-list">Skill1</li>
+                        <li class="skill-list">Skill2</li>
+                        <li class="skill-list">Skill3</li>
+                        <li class="skill-list">Skill4</li>
+                        <li class="skill-list">Skill5</li>
+                        <li class="skill-list">Skill6</li>
+                        <li class="skill-list">Skill7</li>
+                        <li class="skill-list">Skill8</li>
+                        <li class="skill-list">Skill9</li>
+                        <li class="skill-list">Skill10</li>
+                    </ul>
+                </div>
+                <div id="skills-logo">
+    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-container">
+            <h1 class="h-primary">My <span>Contacts</span></h1>
+            <div id="contact-box">
+                <div id="contact-form-box">
+                    <form action="form.php">
+                        <div class="form">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form">
+                            <label for="number">Phone Number: </label>
+                            <input type="number" name="number" id="number" placeholder="Enter your number">
+                        </div>
+                        <div class="form">
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="message" placeholder="Enter your message here" cols="30" rows="10"></textarea>
+                        </div>
+                        <div id="submit-btn"><a href="#">Submit</a></div>
+                    </form>
+                </div>
+
+                <div id="contact-logo-box">
+                    <a href="mailto:rijanshrestha98450@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/rijan.shrestha.999" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ree_zayn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/ree__zayn" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/rijanshrestha3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/reezayn" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer">
+                Copyright &copy; Rijan Shrestha. All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "imgs/sun.png";
+            }
+            else{
+                    icon.src = "imgs/moon.png";
+            }
+        }
+            
+        
+    </script>
+</body>
+
+</html>

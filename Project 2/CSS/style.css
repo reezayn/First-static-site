@@ -1,0 +1,308 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya', serif;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+/* CSS variables */
+:root{
+    --theme-color: #39FF14;
+    --white-color: #edf2fc;
+    --black-color: #18191a;
+}
+.dark-theme{
+    --white-color: #18191a;
+    --black-color: #edf2fc;
+    /* background-color: #242526; */
+}
+.dark-theme #logo-logo{
+    filter: invert();
+}
+/* giving color to background*/
+body{
+    background: var(--white-color);
+    color: var(--black-color);
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+ /* Navigation bar */
+ #navbar{
+     width: 84%;
+     /* margin: auto; */
+     /* padding: 20px 0; */
+     display: flex;
+     align-items: center;
+     top: 0px;
+     position: relative;
+     justify-content: space-between;
+    }
+    
+/* Navigation bar: Logo and image*/
+#logo{
+       margin: 10px 10px;
+       cursor: pointer;
+}
+#logo img{
+    /* filter: invert(); */
+    height: 56px;
+    margin: 2px 84px;
+    transition: transform .2s;
+}
+#logo img:hover{
+    transform: scale(1.1);
+}
+/* Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 10px 20px;
+    display: inline-block;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(128, 123, 123);
+    /* border-radius: 10px; */
+}
+#navbar ul li a:hover, #navbar ul li a:active{
+    color: var(--theme-color);
+}
+
+/* Home section styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 105px;
+    height: 560px;
+    width: 50%;
+    justify-content: center;
+    align-items:inherit;
+    /* margin-left: 8%;
+    margin-top: 15%; */
+}
+span{
+    color: var(--theme-color);
+}
+
+.img-box{
+    width: 45%;
+    height: 560px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    display: flex;
+    height: 100%;
+    /* width: 100%; */
+    position: absolute;
+    left: 54%;
+    bottom: 0;
+    transform: translateX(-45%);
+    transition: bottom 1s, left 1s;
+    overflow-x:hidden;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 50%;
+}
+/* Home section ends */
+/* Project section starts */
+#projects-container{
+    padding: 3px 105px;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+#projects .box{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    padding: 30px 0;
+    margin: 15px 0px;
+    height: 275px;
+    justify-content: space-between;
+}
+#projects .box img{
+    width: 40%;
+    border-radius: 23px;
+}
+.project-info{
+    /* border: 2px solid yellow; */
+    /* border-top: 2px solid gray;
+    border-bottom: 2px solid gray; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    width: 50%;
+}
+/* Project section ends */
+/* Skills section start */
+#skills{
+    padding: 30px 105px;
+}
+#skills-box{
+    /* border: 2px solid hotpink; */
+    display: flex;
+    flex-direction: row;
+}
+#skills-set{
+    /* border: 2px solid cyan; */
+    width: 50%;
+}
+#skills-logo{
+    /* border: 2px solid chocolate; */
+    border-left: 2px solid grey;
+    width: 50%;
+}
+
+/* Skills ends */
+/* Contact section starts */
+
+#contact-container{
+    padding: 30px 105px;
+    position: relative;
+}
+#contact-box{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+#contact-form-box{
+    /* border: 2px solid black; */
+    width: 60%;
+    display: block;
+    /* justify-content: center;
+    align-items:inherit; */
+    padding: 30px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 85%;
+    padding: 0.5rem;
+}
+#contact-box label{
+    display: block;
+}
+#contact-logo-box{
+    /* border: 2px solid cyan; */
+    border-left: 2px solid gray;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-logo-box a{
+    padding: 20px;
+    display: block;
+    font-size: 30px;
+    color: var(--theme-color);
+}
+#contact-logo-box a:hover{
+    color: var(--black-color);
+}
+/* Contacts end here */
+
+footer{
+    padding: 15px 105px;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+/* creating some utility classes to use later if needed */
+.h-primary{
+    text-align: left;
+    font-size: 4rem;
+    padding: 0px;
+}
+.h-secondary{
+    text-align: left;
+    font-size: 3.5rem;
+    padding: 0px;
+}
+p{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.btn{
+    background: var(--theme-color);
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--white-color);
+    display: inline-block;
+    margin: 6px 0;
+    border-radius: 13px;
+    width: 14%;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: var(--black-color);
+    color: var(--theme-color);
+    font-size: 20px;
+    bottom: 10px;
+    /* height: 20px; */
+    width: 130px;
+}
+.project-btn{
+    background-color: var(--theme-color);
+    padding: 14px 18px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-color);
+    display: inline-block;
+    margin: 6px 0;
+    border-radius: 5px;
+    width: 14%;
+}
+.project-btn:hover{
+    border: 1px solid var(--theme-color);
+    background-color: var(--white-color);
+    color: var(--theme-color);
+}
+#submit-btn{
+    background-color: var(--theme-color);
+    padding: 14px 18px;
+    text-align: center;
+    color: var(--white-color);
+    display: inline-block;
+    margin: 6px 250px;
+    border-radius: 5px;
+    width: 14%;
+    text-decoration: none;
+    /* background-color: var(--theme-color);
+    padding: 15px 105px;
+    text-decoration: none;
+    text-align: center;
+    color: #edf2fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    border-radius: 5px;
+    width: 15%; */
+}
+#submit-btn:hover{
+    border: 1px solid var(--theme-color);
+    background-color: var(--white-color);
+    color: var(--theme-color);
+}

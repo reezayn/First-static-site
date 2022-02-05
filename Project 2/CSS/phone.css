@@ -1,0 +1,95 @@
+/* Navigation bar */
+#navbar{
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Home section */
+#home{
+    width: 100%;
+    align-items: center;
+    padding: inherit;
+    flex-direction: column;
+}
+.img-box img{
+    display: none;
+}
+
+/* Projects section */
+#projects .box {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 30px 0;
+    margin: 15px 0px;
+    height: 543px;
+    justify-content:space-between;
+    align-items: center;
+}
+.project-btn{
+    background-color: var(--theme-color);
+    padding: 14px 18px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-color);
+    display: inline-block;
+    margin: 6px 0;
+    border-radius: 5px;
+    width: 80%;
+}
+.project-btn:hover{
+    border: 1px solid var(--theme-color);
+    background-color: var(--white-color);
+    color: var(--theme-color);
+}
+
+
+/* Skills section */
+#skills-set {
+    width: 100%;
+}
+#skills-set li{
+    text-align: center;
+}
+#skills-logo {
+    display: none;
+}
+
+/* Contacts section */
+#contact-box{
+    flex-direction: column;
+}
+#contact-form-box{
+    width: 100%;
+}
+#contact-logo-box{
+    border: none;
+    width: 100%;
+    flex-direction: row;
+}
+
+
+
+/* Footer */
+
+/* Utility */
+.h-primary{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0px;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px;
+}
+p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.btn{
+    text-align: center;
+}
+#submit-btn{
+    margin: 6px 336px;
+}

@@ -1,0 +1,46 @@
+/* Navbar */
+#navbar ul li {
+    margin: 6px 6px
+}
+/* Home */
+
+/* Project section */
+#projects-container {
+    padding: 3px 5px;
+}
+.project-info {
+    padding: 0 0;
+    width: 90%;
+}
+#projects .box img {
+    width: 90%;
+    height: 35%;
+}
+
+/* Skill */
+#skills {
+    padding: 3px 5px;
+}
+/* Contact */
+#contact-container {
+    padding: 3px 5px;
+}
+#contact-form-box{
+    padding: 15px;
+}
+/* Footer */
+footer {
+    padding: 3px 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+/* Utilities */
+.btn {
+    width: 50%;
+}
+.project-btn {
+    width: 88%;
+}
+#submit-btn{
+    margin: 6px 155px;
+}
